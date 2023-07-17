@@ -1,0 +1,74 @@
+function Write(Message, Monitor, Scale, Margin)
+    Monitor = peripheral.wrap(Monitor)
+    local Colors = {
+        ["0"] = 32768,
+        ["1"] = 2048,
+        ["2"] = 8192,
+        ["3"] = 512,
+        ["4"] = 16384,
+        ["5"] = 1024,
+        ["6"] = 2,
+        ["7"] = 256,
+        ["8"] = 128,
+        ["9"] = 2048,
+        ["a"] = 32,
+        ["b"] = 8,
+        ["c"] = 64,
+        ["d"] = 4,
+        ["e"] = 16,
+        ["f"] = 1
+    }
+    if not Monitor then
+        print(Dir.." - "..Monitor.." not found!")
+        return
+    else
+        Monitor.setBackgroundColor(32768)
+        Monitor.setTextColor(1)
+        Monitor.setTextScale(Scale or 1.5)
+        Monitor.clear()
+        Monitor.setCursorPos(1, 1)
+    end
+    for i, Line in pairs(Message) do
+        local Pos = {h = i, w = 1}
+        if Margin then
+            Pos.w = Margin+1
+        end
+        if (Line and not string.match(Line, "^&")) then
+            Line = "&f" .. Line
+        elseif (Line and string.match(Line, "&[lrm]")) then
+            local Align, Extra = string.match(Line, "&([lrm])(.*)")
+            local w, h = Monitor.getSize()
+            local LineLen, PadLen = 0
+            if (not string.match(Extra, "^&")) then
+                Extra = "&f" .. Extra
+            end
+            Line = Extra
+            for Text in string.gmatch(Line, "&[^&]([^&]+)") do
+                LineLen = LineLen + #Text
+            end
+            PadLen = w - LineLen
+            if (Align == "m") then
+                Pos.w = (PadLen / 2) + 1
+            elseif (Align == "r") then
+                Pos.w = (PadLen + 1)-(Margin or 0)
+            end
+        end
+        Monitor.setCursorPos(Pos.w, Pos.h)
+        for Modifier, Text in string.gmatch(Line, "&([^&])([^&]+)") do
+            if string.match(Modifier, "[%dabcdef]") then
+                local Color = Colors[Modifier]
+                Monitor.setTextColor(Color)
+            end
+            Monitor.write(Text)
+        end
+    end
+end
+function WriteFile(Dir, Monitor, Scale, Margin)
+    local File = io.open(Dir)
+    local Message = {}
+    for Line in File:lines() do
+        table.insert(Message, Line)
+    end
+    io.close(File)
+    Write(Message, Monitor, Scale, Margin)
+end
