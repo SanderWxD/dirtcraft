@@ -1,15 +1,15 @@
 os.loadAPI("API")
 
-API.WriteFile("HeaderGeneral", "monitor_77", 3,0)
+API.WriteFile("HeaderGeneral", "monitor_77", 5,0)
 API.WriteFile("General", "monitor_78", 1.5,2)
 
-API.WriteFile("HeaderBase", "monitor_79", 3,0)
+API.WriteFile("HeaderBase", "monitor_79", 5,0)
 API.WriteFile("Base", "monitor_80", 1.5,2)
 
-API.WriteFile("HeaderTrade", "monitor_83", 3,0)
+API.WriteFile("HeaderTrade", "monitor_83", 5,0)
 API.WriteFile("Trade", "monitor_84", 1.5,2)
 
-API.WriteFile("HeaderSpawnMarket", "monitor_81", 3,0)
+API.WriteFile("HeaderSpawnMarket", "monitor_81", 4,0)
 API.WriteFile("SpawnMarket", "monitor_82", 1.5,2)
 
 redstone.setOutput("bottom", true)
