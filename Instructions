@@ -6,4 +6,4 @@ Connect with Networking Cables and Wired Modems. Click the Wired Modems to conne
 In the Advanced Computer, type "edit startup" and change the Monitor numbers into the correct ones.
 
 
-N.B.: in "API.WriteFile("General", "monitor_78", 1.5,2)", 1,5 is the font size, 2 is the spacing from ??
+N.B.: in "API.WriteFile("General", "monitor_78", 1.5,2)", 1,5 is the font size, 2 is the spacing from the front.
