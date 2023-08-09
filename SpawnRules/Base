@@ -1,8 +1,8 @@
 
-> You are only allowed to have five 
-  spawners of any type running at any 
-  given time. Except for villager spawners, 
-  which are banned.
+> You are only allowed to have five spawners of
+  any type running at any given time.
+  When spawning Villagers for trading, do not
+  hold onto more than 10 Villagers at a time.
 
 > Spawners systems must pick up all drops/xp 
   and kill all the mobs quickly after spawning.
@@ -15,6 +15,8 @@
 
 > Spread out your machines, and don't make 
   excessive lag. Anchors load 3x3 chunks.
+
+> Do not build smelteries higher than 20 blocks.
 
 > Do not use anti-afk machines.
 
