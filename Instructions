@@ -1,0 +1,9 @@
+Upload the contents of "install" to Pastebin.
+In an Advanced Computer, type "pastebin get [pastebin token] install"
+In the Advanced Computer, type "install" and press enter
+Hook up 4 max size Monitors (for rules) and 4 max length/1 block height Monitors (for headers) on top.
+Connect with Networking Cables and Wired Modems. Click the Wired Modems to connect the Monitors. Record the Monitor numbers.
+In the Advanced Computer, type "edit startup" and change the Monitor numbers into the correct ones.
+
+
+N.B.: in "API.WriteFile("General", "monitor_78", 1.5,2)", 1,5 is the font size, 2 is the spacing from the front.

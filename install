@@ -1,0 +1,83 @@
+local startupURL = "https://raw.githubusercontent.com/sjs1985/dirtcraft/main/SpawnRules/startup"
+local apiURL = "https://raw.githubusercontent.com/sjs1985/dirtcraft/main/SpawnRules/API"
+local baseHeaderURL = "https://raw.githubusercontent.com/sjs1985/dirtcraft/main/SpawnRules/HeaderBase"
+local baseURL = "https://raw.githubusercontent.com/sjs1985/dirtcraft/main/SpawnRules/Base"
+local tradeHeaderURL = "https://raw.githubusercontent.com/sjs1985/dirtcraft/main/SpawnRules/HeaderTrade"
+local tradeURL = "https://raw.githubusercontent.com/sjs1985/dirtcraft/main/SpawnRules/Trade"
+local generalHeaderURL = "https://raw.githubusercontent.com/sjs1985/dirtcraft/main/SpawnRules/HeaderGeneral"
+local generalURL = "https://raw.githubusercontent.com/sjs1985/dirtcraft/main/SpawnRules/General"
+local spawnMarketHeaderURL = "https://raw.githubusercontent.com/sjs1985/dirtcraft/main/SpawnRules/HeaderSpawnMarket"
+local spawnMarketURL = "https://raw.githubusercontent.com/sjs1985/dirtcraft/main/SpawnRules/SpawnMarket"
+ 
+local data
+local dataFile
+ 
+data = http.get(startupURL)
+dataFile = data.readAll()
+ 
+local file1 = fs.open("startup", "w")
+file1.write(dataFile)
+file1.close()
+ 
+data = http.get(apiURL)
+dataFile = data.readAll()
+ 
+local file1 = fs.open("API", "w")
+file1.write(dataFile)
+file1.close()
+ 
+data = http.get(baseHeaderURL)
+dataFile = data.readAll()
+ 
+local file1 = fs.open("HeaderBase", "w")
+file1.write(dataFile)
+file1.close()
+ 
+data = http.get(baseURL)
+dataFile = data.readAll()
+ 
+local file1 = fs.open("Base", "w")
+file1.write(dataFile)
+file1.close()
+ 
+data = http.get(tradeHeaderURL)
+dataFile = data.readAll()
+ 
+local file1 = fs.open("HeaderTrade", "w")
+file1.write(dataFile)
+file1.close()
+ 
+data = http.get(tradeURL)
+dataFile = data.readAll()
+ 
+local file1 = fs.open("Trade", "w")
+file1.write(dataFile)
+file1.close()
+ 
+data = http.get(generalHeaderURL)
+dataFile = data.readAll()
+ 
+local file1 = fs.open("HeaderGeneral", "w")
+file1.write(dataFile)
+file1.close()
+ 
+data = http.get(generalURL)
+dataFile = data.readAll()
+ 
+local file1 = fs.open("General", "w")
+file1.write(dataFile)
+file1.close()
+ 
+data = http.get(spawnMarketHeaderURL)
+dataFile = data.readAll()
+ 
+local file1 = fs.open("HeaderSpawnMarket", "w")
+file1.write(dataFile)
+file1.close()
+ 
+data = http.get(spawnMarketURL)
+dataFile = data.readAll()
+ 
+local file1 = fs.open("SpawnMarket", "w")
+file1.write(dataFile)
+file1.close()
