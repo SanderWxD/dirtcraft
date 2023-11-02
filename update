@@ -1,0 +1,35 @@
+local baseURL = "https://raw.githubusercontent.com/SanderWxD/dirtcraft/main/SpawnRules/Base"
+local tradeURL = "https://raw.githubusercontent.com/SanderWxD/dirtcraft/main/SpawnRules/Trade"
+local generalURL = "https://raw.githubusercontent.com/SanderWxD/dirtcraft/main/SpawnRules/General"
+local spawnMarketURL = "https://raw.githubusercontent.com/SanderWxD/dirtcraft/main/SpawnRules/SpawnMarket"
+ 
+local data
+local dataFile
+  
+data = http.get(baseURL)
+dataFile = data.readAll()
+ 
+local file1 = fs.open("Base", "w")
+file1.write(dataFile)
+file1.close()
+ 
+data = http.get(tradeURL)
+dataFile = data.readAll()
+ 
+local file1 = fs.open("Trade", "w")
+file1.write(dataFile)
+file1.close()
+  
+data = http.get(generalURL)
+dataFile = data.readAll()
+ 
+local file1 = fs.open("General", "w")
+file1.write(dataFile)
+file1.close()
+  
+data = http.get(spawnMarketURL)
+dataFile = data.readAll()
+ 
+local file1 = fs.open("SpawnMarket", "w")
+file1.write(dataFile)
+file1.close()

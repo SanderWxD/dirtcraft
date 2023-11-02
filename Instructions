@@ -7,3 +7,6 @@ In the Advanced Computer, type "edit startup" and change the Monitor numbers int
 
 
 N.B.: in "API.WriteFile("General", "monitor_78", 1.5,2)", 1,5 is the font size, 2 is the spacing from the front.
+
+
+To update the rules saved in the compupter to newer ones saved in github - run the 'update' program - only the 4 rule files are downloaded and replaced.
