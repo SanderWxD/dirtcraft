@@ -1,15 +1,15 @@
-local startupURL = "https://raw.githubusercontent.com/sjs1985/dirtcraft/blob/main/SpawnRules/startup"
-local apiURL = "https://raw.githubusercontent.com/sjs1985/dirtcraft/blob/main/SpawnRules/API"
-local baseHeaderURL = "https://raw.githubusercontent.com/sjs1985/dirtcraft/blob/main/SpawnRules/HeaderBase"
-local baseURL = "https://raw.githubusercontent.com/sjs1985/dirtcraft/blob/main/SpawnRules/Base"
-local tradeHeaderURL = "https://raw.githubusercontent.com/sjs1985/dirtcraft/blob/main/SpawnRules/HeaderTrade"
-local tradeURL = "https://raw.githubusercontent.com/sjs1985/dirtcraft/blob/main/SpawnRules/Trade"
-local generalHeaderURL = "https://raw.githubusercontent.com/sjs1985/dirtcraft/blob/main/SpawnRules/HeaderGeneral"
-local generalURL = "https://raw.githubusercontent.com/sjs1985/dirtcraft/blob/main/SpawnRules/General"
-local spawnMarketHeaderURL = "https://raw.githubusercontent.com/sjs1985/dirtcraft/blob/main/SpawnRules/HeaderSpawnMarket"
-local spawnMarketURL = "https://raw.githubusercontent.com/sjs1985/dirtcraft/blob/main/SpawnRules/SpawnMarket"
+local startupURL = "https://raw.githubusercontent.com/SanderWxD/dirtcraft/blob/main/SpawnRules/startup"
+local apiURL = "https://raw.githubusercontent.com/SanderWxD/dirtcraft/blob/main/SpawnRules/API"
+local baseHeaderURL = "https://raw.githubusercontent.com/SanderWxD/dirtcraft/blob/main/SpawnRules/HeaderBase"
+local baseURL = "https://raw.githubusercontent.com/SanderWxD/dirtcraft/blob/main/SpawnRules/Base"
+local tradeHeaderURL = "https://raw.githubusercontent.com/SanderWxD/dirtcraft/blob/main/SpawnRules/HeaderTrade"
+local tradeURL = "https://raw.githubusercontent.com/SanderWxD/dirtcraft/blob/main/SpawnRules/Trade"
+local generalHeaderURL = "https://raw.githubusercontent.com/SanderWxD/dirtcraft/blob/main/SpawnRules/HeaderGeneral"
+local generalURL = "https://raw.githubusercontent.com/SanderWxD/dirtcraft/blob/main/SpawnRules/General"
+local spawnMarketHeaderURL = "https://raw.githubusercontent.com/SanderWxD/dirtcraft/blob/main/SpawnRules/HeaderSpawnMarket"
+local spawnMarketURL = "https://raw.githubusercontent.com/SanderWxD/dirtcraft/blob/main/SpawnRules/SpawnMarket"
 
-local updateURL = "https://raw.githubusercontent.com/sjs1985/dirtcraft/blob/main/update"
+local updateURL = "https://raw.githubusercontent.com/SanderWxD/dirtcraft/blob/main/update"
  
 local data
 local dataFile
